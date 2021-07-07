@@ -19,6 +19,18 @@ public class Department {
     private String departmentName;
     private String departmentAddress;
     private String departmentCode;
+	
+	public Department() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Department(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
+		super();
+		this.departmentId = departmentId;
+		this.departmentName = departmentName;
+		this.departmentAddress = departmentAddress;
+		this.departmentCode = departmentCode;
+	}
 	public Long getDepartmentId() {
 		return departmentId;
 	}

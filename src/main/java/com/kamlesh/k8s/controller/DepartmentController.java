@@ -29,8 +29,9 @@ public class DepartmentController {
 
     @GetMapping("/{id}")
     public Department findDepartmentById(@PathVariable("id") Long departmentId) {
-    	
-        return departmentService.findDepartmentById(departmentId);
+    	Department department=new Department(1L,"Production","Surat","101");
+    	return department;
+        //return departmentService.findDepartmentById(departmentId);
     }
 	
 }
